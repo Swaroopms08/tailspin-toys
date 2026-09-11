@@ -39,5 +39,9 @@ export default [
     languageOptions: {
       parser: tseslint.parser,
     },
+    rules: {
+      semi: ["error", "always"],
+      "no-multiple-empty-lines": ["error", { max: 1, maxEOF: 0 }],
+    },
   },
 ];
